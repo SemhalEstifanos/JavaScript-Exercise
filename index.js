@@ -12,11 +12,12 @@ console.log(updatedFox);
 
 
 
-//Third-Question
-let dog = "The quick brown fox jumps over the lazy dog";
-let countThe = (dog.match(/the/gi) || []).length;
-let countBrown = (dog.match(/brown/gi) || []).length;
-console.log(`"the": ${countThe}, "brown": ${countBrown}`);
+//Question 3
+const story = "The quick brown fox jumps over the lazy dog";
+let theCount = story.toLowerCase().split("the").length - 1;
+let brownCount = story.toLowerCase().split("brown").length - 1;
+console.log(`"the" appears ${theCount} times`);
+console.log(`"brown" appears ${brownCount} times`);
 
 
 
